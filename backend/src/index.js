@@ -7,7 +7,6 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT ||5001;
-//tedt
 
 app.use(express.json());
 app.use(cors());
