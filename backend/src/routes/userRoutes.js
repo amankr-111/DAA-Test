@@ -9,4 +9,7 @@ router.get("/user",getAllUser);
 // router.delete("user/:id",deleteUser);
 
 
+
+
+
 export default router;
