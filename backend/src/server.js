@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import userRoutes from "./routes/userRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 import errHandler from "./middlewares/errorHandler.js";
+import buildPortalRoute from './routes/buildPortalRoute.js'
 
 dotenv.config();
 
@@ -16,6 +17,7 @@ app.use(express.json());
 // Routes
 app.use("/api", authRoutes);
 app.use("/api", userRoutes);
+app.use("/api", buildPortalRoute);
 
 // Error handler
 app.use(errHandler);
